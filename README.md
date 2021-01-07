@@ -159,4 +159,4 @@ Finally, we can plot our displacement data with the regression curve, this time 
 
 ### Conclusion:
 
-Now that we have developed models for both the speed and the path of the rocket, we are able to predict with relative certainty its location and velocity at any given time, assuming other factors like wind resistance and fuel hold steady.
+Now that we have developed models for both the speed and the path of a rocket, we are able to predict with relative certainty its location and velocity at any given time, assuming other factors like wind resistance and fuel hold steady.
