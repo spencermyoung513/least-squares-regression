@@ -3,7 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 '''
-linApprox takes an input value / input array, t, representing time(s) in seconds, along with a coefficient matrix xArr and an observation matrix yArr, and returns v, the expected velocity (km/s) based on a least squares line of best fit (v can also be an array of values)
+linApprox takes an input value / input array, t, representing time(s) in seconds, along with a coefficient matrix xArr and an observation matrix yArr
+Returns v, the expected velocity (km/s) based on a least squares line of best fit (v can also be an array of values)
 '''
 def linApprox(t,xArr,yArr): 
 	normal_coef = np.transpose(xArr) @ xArr	# X^T * X
@@ -15,7 +16,8 @@ def linApprox(t,xArr,yArr):
 	return v
 
 '''
-curveApprox takes an input value / input array, t, representing time(s) in seconds, along with a coefficient matrix xArr and an observation matrix yArr, and returns d, the expected displacement (km) based on a least squares parabola of best fit (d can also be an array of values)
+curveApprox takes an input value / input array, t, representing time(s) in seconds, along with a coefficient matrix xArr and an observation matrix yArr
+Returns d, the expected displacement (km) based on a least squares parabola of best fit (d can also be an array of values)
 '''
 def curveApprox(t, xArr, yArr):
 	normal_coef = np.transpose(xArr) @ xArr  
@@ -27,7 +29,8 @@ def curveApprox(t, xArr, yArr):
 	return d
 
 '''
-createPlot takes in a string 'type', indicating if it should create a plot for velocity or displacement, along with two arrays xArr and yArr with the respective data, then creates a .png file with the requested figure
+createPlot takes in a string 'type', indicating if it should create a plot for velocity or displacement, along with two arrays xArr and yArr with the respective data
+Creates a .png file with the requested figure
 '''
 def createPlot(type,xArr,yArr):
 	fig = plt.figure()
