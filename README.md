@@ -156,3 +156,7 @@ def curveApprox(t, xArr, yArr):
 Finally, we can plot our displacement data with the regression curve, this time calling `createPlot("displacement",X2,Y2)`. Our result:
 
 ![Displacement Plot](https://github.com/spencermyoung513/Least-Squares-Regression/blob/main/displacementGraph.png)
+
+### Conclusion:
+
+Now that we have developed models for both the speed and the path of the rocket, we are able to predict with relative certainty its location and velocity at any given time, assuming other factors like wind resistance and fuel hold steady.
